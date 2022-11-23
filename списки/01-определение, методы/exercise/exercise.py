@@ -3,7 +3,14 @@ import math
 
 
 def get_square_roots(digit):
-    return []
+    if digit > 0:
+        sqrt = math.sqrt(digit)
+        return [-sqrt, sqrt]
+    if digit == 0:
+        return [0]
+    if digit < 0:
+        return []
+
 
 
 def test_1():
