@@ -2,7 +2,15 @@ import pytest
 
 
 def get_equals_length(list_):
-    pass
+    # result = 0
+    # if list_ == str(list_):
+    #     for i in list_():
+    #         if len(i) < result:
+    #             result += 1
+    #         return i + '_' + result
+    len_ = 0
+    for i in list_():
+        len_ = len(i)
 
 
 def test_1():
