@@ -2,15 +2,13 @@ import pytest
 
 
 def get_equals_length(list_):
-    # result = 0
-    # if list_ == str(list_):
-    #     for i in list_():
-    #         if len(i) < result:
-    #             result += 1
-    #         return i + '_' + result
-    len_ = 0
-    for i in list_():
-        len_ = len(i)
+    list_.sort(key=len)
+    digit = len(list_[-1])
+    for i in list_:
+        if len(i) < digit:
+            return i + '__' #тут ошибка
+        else:
+            return i
 
 
 def test_1():

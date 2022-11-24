@@ -1,4 +1,5 @@
 import pytest
 
-l = ['a', 'b', 'c']
-print (l[-2])
+list_ = ['a', 'bbbbbb', 'cccc']
+list_.sort(key=len)
+print(list_)
