@@ -6,9 +6,8 @@ def get_equals_length(list_):
     digit = len(list_[-1])
     for i in list_:
         if len(i) < digit:
-            return i + '__' #тут ошибка
-        else:
-            return i
+             str(i) + '__'
+    return list_
 
 
 def test_1():
