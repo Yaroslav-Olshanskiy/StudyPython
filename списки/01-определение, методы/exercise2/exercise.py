@@ -6,9 +6,9 @@ def get_equals_length(list_):
     biggest = len(list_[-1])
     for i in list_:
         if len(i) < biggest:
-             list_.remove(str(i)) and list_.append(str(i) + '__')
+             list_.remove(str(i)) and list_.append(str(i) + ('_' * (biggest - len(i))))
     return list_
-get_equals_length(['1111111111','22222'])
+print(get_equals_length(['1111111111','22222']))
 
 
 
